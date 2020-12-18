@@ -7,7 +7,7 @@ A basic example showcasing a Redis Database with server side rendering
 First make sure you already have Redis installed. Clone the repository, then
 
 ```
-cd nodeExpressMongoJade
+cd nodeExpressRedisJade
 
 redis-server
 
