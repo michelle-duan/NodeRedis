@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  h1 Course Registration
+
+
+  if err
+    div.alert.alert-danger= err
+
+  if msg
+    div.alert.alert-success= msg
+
+  .row
+    .col-8
+      h2 5 Most Recent Registration Info
+      div
+        each s in songs
+          form.p-2(action="/registration/delete" method="POST")
+            input.flex-shrink-1.m-1(style="min-width:20px" type="hidden" name="id" value=s.id)
+
+            label.form-group Nuid:
+              input.form-control.m-1(style="min-width:20px" type="text" name="nuid" value=s.nuid)
+            label.form-group CourseId:
+              input.form-control.m-1(style="min-width:20px" type="number" name="courseid" value=s.courseid)
+            .form-group
+              button.m-1.btn.btn-danger(type="submit" formaction="/registration/delete") Delete
+              button.m-1.btn.btn-secondary(type="submit" formaction="/registration/update") Update
+            hr
+
+    .col-4
+      h2 Create new registration
+
+      form(action="/registration/create", method="post")
+        .form-group
+          label Nuid
+            input.form-control(type="number", name="nuid")
+
+        .form-group
+          label CourseId
+            input.form-control(type="number", name="courseid")
+
+        button.btn.btn-primary(type="submit") Create New Registration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- then end
