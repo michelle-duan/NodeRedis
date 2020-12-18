@@ -1,8 +1,8 @@
-# nodeExpressRedisJade
+# NodeExpressRedisJade
 
 A basic example showcasing a Redis Database with server side rendering
 
-## Installation
+### Installation
 
 First make sure you already have Redis installed. Clone the repository, then
 
@@ -18,9 +18,9 @@ npm start
 
 And your app should be running on http://localhost:3000 .
 
-## Reference
+### Reference
 
 https://github.com/john-guerra/nodeExpressRedisJade
 
-## Video Demo
+### Video Demo
 
