@@ -1,5 +1,5 @@
 # NodeExpressRedisJade
-### Note there are two app versions, one created using Redis sorted set, and another using Redis regular set.
+### Note there are two app versions, one created using Redis sorted set to display top 5, and another using Redis regular set to display all info.
 
 A basic example showcasing a Redis Database with server side rendering
 
