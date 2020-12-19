@@ -24,3 +24,5 @@ https://github.com/john-guerra/nodeExpressRedisJade
 
 ### Video Demo
 
+https://youtu.be/j1r06lge-po
+
