@@ -1,4 +1,5 @@
 # NodeExpressRedisJade
+### Note there are two app versions, one created using Redis sorted set, and another using Redis regular set.
 
 A basic example showcasing a Redis Database with server side rendering
 
